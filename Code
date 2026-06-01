@@ -1,0 +1,246 @@
+%-------------------------
+% Resume in Latex
+% Author : Enzo Marichal
+% To be find at: Mettre lien github
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+\usepackage{charter}
+
+
+% Footnote skip fix for fancyhdr
+\setlength{\footskip}{10pt}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-7pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-3pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingg}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheadingnon}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    \textbf{\huge \scshape Prénom NOM} \\ \vspace{1pt}
+    \small {{prénom.NOM@edu.escp.eu}}\\ \vspace{1pt} 
+    \small {{Nationality: X and Y}}
+   
+\end{center}
+
+%-----------EDUCATION-----------
+\section*{\textbf{\large EDUCATION}}
+  \resumeSubHeadingListStart
+
+       \resumeSubheading
+      {ESCP Business School}{\textbf{Paris - London}}
+      {{Master in Finance (1st worldwide by FT)}}{\textup{{February 2027}}}
+      \item\small{{\textbf{\hspace{0.5cm}Coursework:} Python, FX, ......}}
+
+     \resumeSubheading
+      {Previous School}{\textbf{Location}}
+      {Bachelor in Business and Administration} {{September 2021 - June 2025}}
+      \item\small{{\textbf{\hspace{0.5cm}Coursework:} X, Y, Z ......}}\vspace{-10pt}
+      \item\small{{\textbf{\hspace{0.5cm}University XYZ Exchange Semester + Dates}}}
+      
+
+       \resumeSubheading
+      {XYZ High School - Diploma obtained with Very High Honours}{\textbf{Location}}
+      {\textbf{\hspace{0.5cm}Coursework:} \textnormal{Major and Minors}}{{September 2019 - June 2021}} \\
+      
+  \resumeSubHeadingListEnd
+
+\vspace{-7pt}
+%-----------EXPERIENCE-----------
+\section*{\textbf{\large EXPERIENCE}}
+  \resumeSubHeadingListStart
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+ \resumeSubheading
+      {Company Name}{\textbf{Location}}
+      {Position} {January 2025 - June 2025}
+      \resumeItemListStart
+        \resumeItem{Developed.....}
+        \resumeItem{Produced.....}\\
+        \resumeItem{Analyzed.....}
+        \resumeItem{Built....}\\
+      \resumeItemListEnd
+\vspace{3pt}
+
+ \resumeSubheading
+      {Company Name}{\textbf{Location}}
+      {Position} {July 2023 - August 2023}
+      \resumeItemListStart
+        \resumeItem{Trained.....}\\
+        \resumeItem{Structured.....}
+        \resumeItem{Supervised......}
+        \resumeItem{Monitored.....}\\
+      \resumeItemListEnd
+      
+
+  \resumeSubHeadingListEnd
+\vspace{-7.5pt}
+
+%
+%-----------ACTIVITIES-----------
+\section*{\textbf{\large ACTIVITIES}}
+\resumeSubHeadingListStart
+  
+  
+      \resumeSubheading
+      {Activity Name 1}{\textbf{Location}}
+      {Position} {\textit{September 2022 - June 2025}}
+      \resumeItemListStart
+        \resumeItem{Designed......}
+        \resumeItem{Implemented......}
+      \resumeItemListEnd
+\vspace{3pt}
+
+    \resumeSubheading
+      {Activity Name 2}{\textbf{Location}}
+      {Position} {\textit{September 2021 - December 2021}}
+      \resumeItemListStart
+        \resumeItem{Worked on....}
+        \resumeItem{Developed....}
+      \resumeItemListEnd
+\vspace{3pt}
+
+      \resumeSubheading
+      {Activity Name 3}{\textbf{Location}}
+      {Position} {\textit{September 2019 - April 2021}}
+      \resumeItemListStart
+        \resumeItem{Helped......}
+        \resumeItem{....}
+ \resumeSubHeadingListEnd
+
+\vspace{-7.5pt}
+%-----------SKILLS and Interests-----------
+\section*{\textbf{\large SKILLS \& INTERESTS}}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item
+
+     
+     \textbf{Languages: }{English (Native), Language 2 (Native), Language 3 (Fluent), Language 4 (Intermediate)} \\
+
+     \textbf{Technical Skills: }{Python, VBA, HTML,......} \\
+     
+     \textbf{Certifications: }{Certified Associate in Python Programming, Certified Professional in Python Programming,......} \\
+
+     
+     \textbf{Interests: }{Hiking, Cycling, Discovering new cultures, Volunteering projects, Mentoring, Peer support} \\
+    
+ \end{itemize}
+%-------------------------------------------
+\end{document}
